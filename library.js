@@ -1,15 +1,29 @@
-function showForm() {
-  document.getElementById('newBookForm').style.display = "block";
-}
-
 let myLibrary = [];
 
-function Book() {
+class Book {
+  constructor(title, author, pages, status) {
   this.title = title
   this.author = author
   this.pages = pages
   this.status = status
 }
+  toggleStatus() {
+    this.alreadyRead = !this.alreadyRead;
+  }
+}
+
+const bookList = document.querySelector('#bookList');
+const newFormButton = document.querySelector('#newBookButton');
+const form = document.querySelector('#newBookForm');
+const addBook = document.querySelector('#addBook');
+const bookTitle = document.querySelector('#bookTitle');
+const bookAuthor = document.querySelector('#bookAuthor');
+const bookPages = document.querySelector('#bookPages');
+const bookRead = document.querySelector('#bookRead');
+
+function renderColumn
+
+// source https://lcyne.github.io/top-library/scripts/main.js
 
 function addBookToLibrary() {
     newBook = new Book(title, author, pages, status)

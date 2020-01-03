@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Library</title>
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="library.js"></script>
+</head>
+
+<body>
 
 <table>
 <thead>
@@ -17,11 +20,10 @@
 </thead>
 
 </table>
-
-<button id="add" onclick="showForm()">Add Book</button>
-
-<div id="newBookForm" style="display: none;">
-<form action="#" method="post">
+<br>
+<br>
+<div class="newBook">Add New Book:
+<form id="addNewBook" action="#" method="post">
 <ul>
   <li>
     <label for="title">Title:</label>
@@ -46,5 +48,6 @@
 </form>
 </div>
 
-  </body>
+</body>
+
 </html>
