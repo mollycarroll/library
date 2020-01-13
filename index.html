@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Library</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="library.js"></script>
 </head>
 
 <body>
 
-<table>
+<table id="htmlLibraryTable">
+
 <thead>
 <tr>
   <th scope="col">Title</th>
@@ -18,6 +18,8 @@
   <th scope="col">Status</th>
 </tr>
 </thead>
+
+
 
 </table>
 <br>
@@ -42,12 +44,13 @@
     <input type="checkbox" id="status" name="status" title="Read?">
   </li>
   <li>
-    <input type="submit" value="Submit">
+    <input id="submit" type="submit" value="Submit">
   </li>
   </ul>
 </form>
 </div>
 
+<script src="library.js"></script>
 </body>
 
 </html>
